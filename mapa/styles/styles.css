@@ -1,0 +1,41 @@
+*{
+    margin: 0px;
+}
+body{ 
+    background-color: rgb(195, 252, 233);   
+    max-width: 3000px;
+    max-height: 2000px;
+    margin: 8px;    
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    text-align: center;
+}
+h1{
+    color: rgb(22, 109, 80);
+    margin: 50px 20px 20px 20px;
+    text-align: center;    
+    font-size: 24px;  
+}
+#mapid{
+    height: 80%;
+    border: 2px solid rgb(22,109,80);
+    touch-action: pinch-zoom;
+}
+#kind_food_selector{
+    margin-bottom: 20px;
+    color: rgb(22, 109, 80);
+}
+
+
+/* map popup style */
+.mypopup .leaflet-popup-content-wrapper{
+    background: rgba(248, 36, 36, 0.8);
+    border: 3px solid rgba(248, 36, 36);
+    border-radius: 10px;
+    width: 200px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: white;
+}
+.mypopup .leaflet-popup-tip{
+    background: rgba(248, 36, 36, 0.8);
+    color: white;
+}

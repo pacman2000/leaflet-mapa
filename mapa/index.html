@@ -1,0 +1,35 @@
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>Mi mapa con filtros</title>
+    <!-- Leaflet -->
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.5.1/dist/leaflet.css" />
+    <!-- Leaflet, link para el cluster -->
+    <link rel="stylesheet" href="https://unpkg.com/leaflet.markercluster@1.4.1/dist/MarkerCluster.css" />
+    <link rel="stylesheet" href="https://unpkg.com/leaflet.markercluster@1.4.1/dist/MarkerCluster.Default.css" />
+    <!-- Own styles -->
+	  <link href="styles/styles.css" rel="stylesheet" /> 
+  </head>
+  <body>
+    <div class="row">    
+      <h1>Restaurants</h1>
+      <p>Food type:
+        <span>
+          <select id='kind_food_selector'> </select>
+        </span>
+      </p>
+    </div>
+    
+    <div id="mapid" class="row"></div>
+
+	<!-- Ajax library -->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <!-- Leaflet -->
+  <script src="https://unpkg.com/leaflet@1.5.1/dist/leaflet.js"></script>
+  <!-- Leaflet, script para el cluster -->
+  <script src='https://unpkg.com/leaflet.markercluster@1.4.1/dist/leaflet.markercluster.js'></script>	
+  <!-- Own script -->
+  <script src='script.js'></script>
+
+  </body>
+</html>
