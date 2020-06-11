@@ -34,6 +34,7 @@ function onMapLoad() {
 
 //en cada evento on change del elemento select con id kind_food_selector ejecuta la funcion render_to_map con el value escogido del select
 $('#kind_food_selector').on('change', function() {	
+	console.log(this.value);	
 	render_to_map(data_markers, this.value);
 });
 
@@ -55,7 +56,7 @@ function render_to_map(data_markers, filter){
 	} else {
 		for (let i = 0; i < data_markers.length; i++) {
 			let type = data_markers[i].kind_food;
-			if(type.includes(filter)){			
+			if(type.split(",").includes(filter)){			
 				marker = L.marker([data_markers[i].lat, data_markers[i].lng], data_markers[i].name);
 				marker.addTo(markerGroup);
 				marker.bindPopup('<p style="text-align:center; font-size:130%;"><b>' + data_markers[i].name + '</b></p>');
